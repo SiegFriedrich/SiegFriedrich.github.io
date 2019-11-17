@@ -61,7 +61,7 @@
 <meta property="og:site_name" content="Sieg的小站">
 <meta property="og:description" content="之前都是使用jerkyll作为静态网页的,这次想使用HEXO来搭建个人博客同时也想好好把自己所学习的知识以及生活的感触写在博客里.好好学习,提升个人价值吧.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-16T14:18:11.828Z">
+<meta property="og:updated_time" content="2019-11-17T04:18:56.095Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/12/2019-11-12-Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA01/">
@@ -218,7 +218,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-16 23:18:11" itemprop="dateModified" datetime="2019-11-16T23:18:11+09:00">2019-11-16</time>
+                <time title="修改时间：2019-11-17 13:18:56" itemprop="dateModified" datetime="2019-11-17T13:18:56+09:00">2019-11-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -253,7 +253,7 @@
         <p>之前都是使用jerkyll作为静态网页的,这次想使用HEXO来搭建个人博客<br>同时也想好好把自己所学习的知识以及生活的感触写在博客里.好好学习,提升个人价值吧.</p>
 <a id="more"></a>
 
-<h1 id="01本地安装与运行"><a href="#01本地安装与运行" class="headerlink" title="01本地安装与运行"></a>01本地安装与运行</h1><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>去官网下载,并安装. HEXO是基于Node.js的</p>
+<h2 id="本地安装与运行"><a href="#本地安装与运行" class="headerlink" title="本地安装与运行"></a>本地安装与运行</h2><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>去官网下载,并安装. HEXO是基于Node.js的</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ryouitsukun@ryouitsukuns-MacBook-Pro ~ % node -v</span><br><span class="line">v12.13.0</span><br></pre></td></tr></table></figure>
 
 <h3 id="安装HEXO服务器"><a href="#安装HEXO服务器" class="headerlink" title="安装HEXO服务器"></a>安装HEXO服务器</h3><blockquote>
@@ -264,32 +264,24 @@
 <p>hexo server</p>
 </blockquote>
 <p>安装并启动成功 ctrl+c 退出进程</p>
-<h1 id="02框架的基本结构-amp-打包后的文件介绍"><a href="#02框架的基本结构-amp-打包后的文件介绍" class="headerlink" title="02框架的基本结构&amp;打包后的文件介绍"></a>02框架的基本结构&amp;打包后的文件介绍</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|-node_modules &lt;-node相关组建,是固定的文件夹</span><br><span class="line">|-scaffolds &lt;-固定结构定义</span><br><span class="line">|-source</span><br><span class="line">  |-_posts &lt;-所有笔记以markdown格式书写</span><br><span class="line">|-themes &lt;-主题</span><br><span class="line">_config.yml &lt;-配置文件</span><br><span class="line">.gitignore</span><br><span class="line">db.json</span><br><span class="line">package-lock.json</span><br><span class="line">package.json</span><br></pre></td></tr></table></figure>
+<h2 id="框架的基本结构-amp-打包后的文件介绍"><a href="#框架的基本结构-amp-打包后的文件介绍" class="headerlink" title="框架的基本结构&amp;打包后的文件介绍"></a>框架的基本结构&amp;打包后的文件介绍</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|-node_modules &lt;-node相关组建,是固定的文件夹</span><br><span class="line">|-scaffolds &lt;-固定结构定义</span><br><span class="line">|-source</span><br><span class="line">  |-_posts &lt;-所有笔记以markdown格式书写</span><br><span class="line">|-themes &lt;-主题</span><br><span class="line">_config.yml &lt;-配置文件</span><br><span class="line">.gitignore</span><br><span class="line">db.json</span><br><span class="line">package-lock.json</span><br><span class="line">package.json</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>网站生成命令 hexo g 或者 hexo generate</p>
 </blockquote>
 <p>生成后的public文件夹直接作为静态文件可进行部署</p>
-<h1 id="03主题安装-amp-推荐"><a href="#03主题安装-amp-推荐" class="headerlink" title="03主题安装&amp;推荐"></a>03主题安装&amp;推荐</h1><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo.io/themes/</a></p>
+<h2 id="主题安装-amp-推荐"><a href="#主题安装-amp-推荐" class="headerlink" title="主题安装&amp;推荐"></a>主题安装&amp;推荐</h2><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo.io/themes/</a></p>
 <h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><blockquote>
 <p>cd your-blog</p>
 <p>git clone <a href="https://github.com/geekplux/hexo-theme-typing" target="_blank" rel="noopener">https://github.com/geekplux/hexo-theme-typing</a> themes/typing</p>
 </blockquote>
-<h5 id="Typing-requires-Hexo-2-4-and-above"><a href="#Typing-requires-Hexo-2-4-and-above" class="headerlink" title="Typing requires Hexo 2.4 and above."></a>Typing requires Hexo 2.4 and above.</h5><h3 id="Enable"><a href="#Enable" class="headerlink" title="Enable"></a>Enable</h3><p>Modify <strong>theme</strong> setting in <strong>_config.yml</strong> to <strong>typing</strong>.</p>
+<ul>
+<li>Typing requires Hexo 2.4 and above.</li>
+</ul>
+<h3 id="Enable"><a href="#Enable" class="headerlink" title="Enable"></a>Enable</h3><p>Modify <strong>theme</strong> setting in <strong>_config.yml</strong> to <strong>typing</strong>.</p>
 <p>Also if your website language is English make sure to explicitly specify it: language: “en”</p>
 <p>Update<br>cd themes/typing<br>git pull</p>
 <h3 id="restart"><a href="#restart" class="headerlink" title="restart"></a>restart</h3><p>首先ctrl+c关闭进程<br>再输入 hexo server 启动</p>
-<h1 id="04博客必备插件安装"><a href="#04博客必备插件安装" class="headerlink" title="04博客必备插件安装"></a>04博客必备插件安装</h1><h3 id="代码黑色背景-amp-高亮"><a href="#代码黑色背景-amp-高亮" class="headerlink" title="代码黑色背景&amp;高亮"></a>代码黑色背景&amp;高亮</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock lang:java %&#125;</span><br><span class="line">  println(&apos;Hello world&apos;);</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>在 head.ejs中添加该link可以使用代码黑色背景及高亮</p>
-<h3 id="浏览次数统计"><a href="#浏览次数统计" class="headerlink" title="浏览次数统计"></a>浏览次数统计</h3><p>在after-footer.ejs里添加</p>
-<ul>
-<li>busuanzi.js</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;本站总访问量&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次&lt;/span&gt;</span><br></pre></td></tr></table></figure>
-
-<hr>
 
     </div>
 
@@ -357,7 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#01本地安装与运行"><span class="nav-number">1.</span> <span class="nav-text">01本地安装与运行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装HEXO服务器"><span class="nav-number">1.0.2.</span> <span class="nav-text">安装HEXO服务器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#02框架的基本结构-amp-打包后的文件介绍"><span class="nav-number">2.</span> <span class="nav-text">02框架的基本结构&amp;打包后的文件介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#03主题安装-amp-推荐"><span class="nav-number">3.</span> <span class="nav-text">03主题安装&amp;推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation"><span class="nav-number">3.0.1.</span> <span class="nav-text">Installation</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Typing-requires-Hexo-2-4-and-above"><span class="nav-number">3.0.1.0.1.</span> <span class="nav-text">Typing requires Hexo 2.4 and above.</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Enable"><span class="nav-number">3.0.2.</span> <span class="nav-text">Enable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#restart"><span class="nav-number">3.0.3.</span> <span class="nav-text">restart</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#04博客必备插件安装"><span class="nav-number">4.</span> <span class="nav-text">04博客必备插件安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码黑色背景-amp-高亮"><span class="nav-number">4.0.1.</span> <span class="nav-text">代码黑色背景&amp;高亮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浏览次数统计"><span class="nav-number">4.0.2.</span> <span class="nav-text">浏览次数统计</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地安装与运行"><span class="nav-number">1.</span> <span class="nav-text">本地安装与运行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装HEXO服务器"><span class="nav-number">1.2.</span> <span class="nav-text">安装HEXO服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#框架的基本结构-amp-打包后的文件介绍"><span class="nav-number">2.</span> <span class="nav-text">框架的基本结构&amp;打包后的文件介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题安装-amp-推荐"><span class="nav-number">3.</span> <span class="nav-text">主题安装&amp;推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation"><span class="nav-number">3.1.</span> <span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Enable"><span class="nav-number">3.2.</span> <span class="nav-text">Enable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#restart"><span class="nav-number">3.3.</span> <span class="nav-text">restart</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
